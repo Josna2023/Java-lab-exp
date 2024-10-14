@@ -1,0 +1,23 @@
+package javalab;
+import java.util.*;
+public class tokenizer
+{
+	public static void main(String args[])
+	{
+		int n,sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the integers with one space gap");
+		String sr=sc.nextLine();
+		StringTokenizer st=new StringTokenizer(sr," ");
+		while(st.hasMoreTokens())
+		{
+			String a=st.nextToken();
+			n=Integer.parseInt(a);
+			System.out.println(n);
+			sum+=n;
+		}
+		System.out.println("sum of integers="+sum);
+		sc.close();
+	}
+
+}
